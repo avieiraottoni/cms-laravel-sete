@@ -1,0 +1,1 @@
+<h2>Essa é a página do nosso blog.</h2>
