@@ -24,6 +24,7 @@ Route::namespace('Site')->group(function(){
     //página estática
     Route::view('sobre', 'site.about.index');
 
+    //rotas para contatos.
     Route::get('contato', 'ContactController@index');
     Route::post('contato', 'ContactController@form');
 });
