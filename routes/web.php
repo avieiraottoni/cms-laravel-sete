@@ -22,9 +22,9 @@ Route::namespace('Site')->group(function(){
     Route::get('/blog', 'BlogController');
 
     //página estática
-    Route::view('sobre', 'site.about.index');
+    Route::view('/sobre', 'site.about.index');
 
     //rotas para contatos.
-    Route::get('contato', 'ContactController@index');
-    Route::post('contato', 'ContactController@form');
+    Route::get('/contato', 'ContactController@index')->name('site.contact');
+    Route::post('/contato', 'ContactController@form')->name('site.contact.form');
 });
