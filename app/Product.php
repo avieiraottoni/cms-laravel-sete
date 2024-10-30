@@ -9,6 +9,10 @@ class Product extends Model
 {
     use SoftDeletes;
 
+    /**
+     * Summary of fillable
+     * @var array
+     */
     protected $fillable = [
         'category_id',
         'name',

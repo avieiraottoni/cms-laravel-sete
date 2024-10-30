@@ -9,6 +9,10 @@ class Post extends Model
 {
     use SoftDeletes;
 
+    /**
+     * Summary of fillable
+     * @var array
+     */
     protected $fillable = [
         'user_id',
         'title',
